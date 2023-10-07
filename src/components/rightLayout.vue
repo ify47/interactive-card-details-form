@@ -100,11 +100,11 @@ const submitForm = async () => {
                 <label class="name" for="details">Exp. Date (MM/YY)</label>
                 <div>
                     <input class="typenum" :class="{ danger: v$.ccMonth.$dirty && v$.ccMonth.$invalid }" type="tel"
-                        name="mm" id="details" :min="1" :maxlength="2" placeholder="MM" v-model="ccMonth"
+                        name="mm" id="details" :maxlength="2" placeholder="MM" v-model="ccMonth"
                         @input="handleCcDetails('mm')" @blur="v$.ccMonth.$touch" />
 
                     <input class="typenum minspace" :class="{ danger: v$.ccYear.$dirty && v$.ccYear.$invalid }" type="tel"
-                        name="yy" id="cardDetails" :min="1" :maxlength="2" placeholder="YY" v-model="ccYear"
+                        name="yy" id="cardDetails" :maxlength="2" placeholder="YY" v-model="ccYear"
                         @input="handleCcDetails('yy')" @blur="v$.ccYear.$touch" />
                     <p v-if="v$.ccMonth.$dirty && v$.ccMonth.$invalid || v$.ccYear.$dirty && v$.ccYear.$invalid"
                         class="error">Can't be blank</p>
