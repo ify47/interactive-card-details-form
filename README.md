@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+# Multi-Step-Form
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is a solution to the [Interactive Card Details Form](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw) from Frontend Mentor. 
 
-## Recommended IDE Setup
+## Overview
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The goal of the project was to create a  credit card form webapp prototype in which users can fill in their credentials real-time, make changes and submit the details.
+
+## Demo
+
+You can see a live demo of the project in the link area.
+
+## Technologies Used
+
+The project was built using:
+
+- Vue + Vite
+
+## Features
+
+- Create credit card forms easily.
+- Customizable and flexible.
+- Support for values display, validation and error handling.
+- Responsive design.
+- Keyboard navigation support.
+
+## Credits
+
+Thanks to Frontend Mentor for providing the challenge and the design files.

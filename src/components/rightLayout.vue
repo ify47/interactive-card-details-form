@@ -17,7 +17,8 @@ function handleName(event) {
     cardName.value = ccNameValue.value;
 }
 
-function handleCcNumber() {
+function handleCcNumber(event) {
+    ccNumberValue.value = event.target.value;
     // Add non-numeric characters from the input
     const formattedNumbers = ccNumberValue.value.replace(/\W/g, "");
     // Update the cardNumbers with new values formatted with 0 passed onto leftLayout
@@ -103,7 +104,7 @@ const submitForm = async () => {
                         @input="handleCcDetails('mm')" @blur="v$.ccMonth.$touch" />
 
                     <input class="typenum minspace" :class="{ danger: v$.ccYear.$dirty && v$.ccYear.$invalid }" type="tel"
-                        name="yy" id="cardDetails" :min="1" :maxlength="2" max="2" placeholder="YY" v-model="ccYear"
+                        name="yy" id="cardDetails" :min="1" :maxlength="2" placeholder="YY" v-model="ccYear"
                         @input="handleCcDetails('yy')" @blur="v$.ccYear.$touch" />
                     <p v-if="v$.ccMonth.$dirty && v$.ccMonth.$invalid || v$.ccYear.$dirty && v$.ccYear.$invalid"
                         class="error">Can't be blank</p>
